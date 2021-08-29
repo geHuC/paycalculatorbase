@@ -1,0 +1,13 @@
+.container{
+    border: 0.25rem solid black;
+    margin: auto;
+    margin-top: 2rem;
+    width: 75%;
+    text-align: center;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+.result>p{
+    margin-top: 2rem;
+    font-size: 2rem;
+}

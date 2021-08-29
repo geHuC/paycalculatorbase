@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Pay Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 >Pay Calculator</h1>
+        <form id="calculator-form" class="form-inline justify-content-center">
+            <label for="hours" class="p-1">How many hours did you work?</label><br>
+            <input class="form-control w-75 mx-auto" type="number" step="0.01" name="hours" placeholder="Hours Worked..."><br> <!-- Debated whether to have steps in hours or keep them integers at leaset in chromium -->
+            <label for="rate" class="p-1">How much are you paid per hour?</label><br>
+            <input class="form-control w-75 mx-auto" type="number" step="0.01" name="rate" placeholder="Hourly Rate..."><br>
+            <button type="submit" class="btn btn-dark mx-auto w-75 p-2">Submit</button>
+        </form>
+        <div class="result">
+            <p></p>
+        </div>
+    </div>
+    <script src="/app.js"></script> <!-- Didn't want to build the entire content dynamically or to have onLoad in the js so I'm loading it afte the body -->
+</body>
+
+</html>
